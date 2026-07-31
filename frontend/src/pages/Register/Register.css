@@ -1,0 +1,351 @@
+.register-page.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: stretch;
+}
+
+.register-page .auth-form-panel {
+  padding: var(--s-6) var(--s-7);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  min-height: 100vh;
+  width: auto;
+  max-width: none;
+}
+
+.register-page .auth-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--s-7);
+}
+
+.register-page .auth-form-box {
+  max-width: 460px;
+  margin: auto;
+  width: 100%;
+}
+
+.register-page .auth-form-box h1 {
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 0 0 var(--s-3);
+  font-variation-settings: "wdth" 95;
+}
+
+.register-page .auth-form-box h1 em {
+  font-style: italic;
+  color: var(--ink-3);
+}
+
+.register-page .auth-form-box h1 .signal {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.register-page .auth-form-box .sub {
+  color: var(--ink-3);
+  font-size: 16px;
+  margin: 0 0 var(--s-6);
+  max-width: 36ch;
+  line-height: 1.5;
+}
+
+.register-page .auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+
+.register-page .auth-form .row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.register-page .auth-form .input {
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+.register-page .auth-form .field-help {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.register-page .checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.register-page .checklist .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.register-page .checklist .row.met {
+  color: var(--success);
+}
+
+.register-page .checklist .row .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--ink-4);
+}
+
+.register-page .checklist .row.met .dot {
+  background: var(--success);
+}
+
+.spin-icon {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.register-page .divider-or {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin: var(--s-3) 0;
+}
+
+.register-page .divider-or hr {
+  flex: 1;
+}
+
+.register-page .divider-or span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.register-page .sso-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.register-page .sso-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.register-page .sso-btn:hover {
+  border-color: var(--ink);
+}
+
+.register-page .auth-foot {
+  margin-top: var(--s-5);
+  font-size: 14px;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+.register-page .auth-foot a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 1px;
+}
+
+.register-page .auth-form-panel .legal {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  margin-top: auto;
+  padding-top: var(--s-7);
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-page .auth-art-panel {
+  background: var(--accent);
+  color: white;
+  padding: var(--s-7);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.register-page .auth-art-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.register-page .auth-art-top span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register-page .auth-art-top .ind {
+  color: white;
+  font-weight: 500;
+}
+
+.register-page .benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  margin: auto 0;
+}
+
+.register-page .benefit-block {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: var(--s-5);
+  align-items: flex-start;
+  padding-bottom: var(--s-5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.register-page .benefit-block:last-child {
+  border-bottom: 0;
+}
+
+.register-page .benefit-block .n {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.register-page .benefit-block h3 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 8px;
+  font-variation-settings: "wdth" 95;
+}
+
+.register-page .benefit-block h3 em {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register-page .benefit-block p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 38ch;
+}
+
+.register-page .art-foot {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: var(--s-5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--s-5);
+}
+
+.register-page .art-foot .stat .n {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.register-page .art-foot .stat .l {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+.register-page .otp-email-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.register-page .otp-action-btn {
+  min-width: 118px;
+  white-space: nowrap;
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.register-page .otp-input {
+  letter-spacing: 0.28em;
+  font-family: var(--font-mono);
+  font-size: 17px !important;
+  font-weight: 600;
+}
+
+.register-page .otp-verification-box {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  background: var(--bg-elevated);
+}
+
+.register-page .otp-status {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.register-page .otp-status-success {
+  color: var(--success);
+}
+
+@media (max-width: 620px) {
+  .register-page .otp-email-row {
+    grid-template-columns: 1fr;
+  }
+
+  .register-page .otp-action-btn {
+    width: 100%;
+  }
+}
+
+.register-page .google-terms-note {
+  margin: 8px 0 0;
+  color: var(--ink-3);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}

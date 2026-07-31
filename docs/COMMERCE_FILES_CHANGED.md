@@ -1,0 +1,105 @@
+# Commerce Completion — Files Changed
+
+Compared with `Shopsflow-complete-enhanced-merged-admin-reviews-by-product.zip`.
+
+- Modified existing files: **37**
+- Added files: **56**
+
+## Modified
+
+- `README.md`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/CategoryController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/OrderController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/PaymentController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/ProductController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/ReviewController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/OrderResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/ReviewResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/UserResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/Order.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/User.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/enums/NotificationType.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/enums/OrderStatus.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/mapper/OrderMapper.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/mapper/ReviewMapper.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/mapper/UserMapper.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/OrderRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/ReviewRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/OrderService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/ReviewService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/VnPayService.java`
+- `backend/src/test/java/dev/namphamcse/shopsflow/service/OrderServiceTest.java`
+- `backend/src/test/java/dev/namphamcse/shopsflow/service/ReviewServiceTest.java`
+- `backend/src/test/java/dev/namphamcse/shopsflow/service/VnPayServiceTest.java`
+- `frontend/src/App.tsx`
+- `frontend/src/api/authApi.ts`
+- `frontend/src/api/storeApi.ts`
+- `frontend/src/components/Footer.tsx`
+- `frontend/src/components/Header.tsx`
+- `frontend/src/context/AuthProvider.tsx`
+- `frontend/src/pages/Admin/Admin.tsx`
+- `frontend/src/pages/Cart/Cart.tsx`
+- `frontend/src/pages/Notifications/Notifications.tsx`
+- `frontend/src/pages/Orders/Orders.tsx`
+- `frontend/src/pages/ProductDetail/ProductDetail.tsx`
+- `frontend/src/store.css`
+- `frontend/src/types/index.ts`
+
+## Added
+
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/AccountController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/AdminOperationsController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/CouponController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/controller/SupportController.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/AddressRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/CheckoutRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/CouponRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/InventoryAdjustmentRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/ProfileUpdateRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/ReturnRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/ShipOrderRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/SupportMessageRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/request/SupportTicketRequest.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/AddressResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/AdminDashboardResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/AuditLogResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/CouponResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/CustomerSummaryResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/InventoryTransactionResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/OrderHistoryResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/SupportMessageResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/dto/response/SupportTicketResponse.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/Address.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/AuditLog.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/Coupon.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/InventoryTransaction.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/OrderStatusHistory.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/SupportMessage.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/SupportTicket.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/WishlistItem.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/enums/DiscountType.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/enums/InventoryTransactionType.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/entity/enums/SupportTicketStatus.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/AddressRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/AuditLogRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/CouponRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/InventoryTransactionRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/OrderStatusHistoryRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/SupportMessageRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/SupportTicketRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/repository/WishlistRepository.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/AccountService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/AdminInsightsService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/AuditService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/CouponService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/InventoryService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/OrderHistoryService.java`
+- `backend/src/main/java/dev/namphamcse/shopsflow/service/SupportService.java`
+- `backend/src/main/resources/db/migration/V6__complete_commerce_features.sql`
+- `docs/COMMERCE_COMPLETION_PACK.md`
+- `docs/COMMERCE_FILES_CHANGED.md`
+- `docs/COMMERCE_VALIDATION.md`
+- `frontend/src/pages/Account/Account.tsx`
+- `frontend/src/pages/AdminOperations/AdminOperations.tsx`
+- `frontend/src/pages/OrderDetail/OrderDetail.tsx`
+- `frontend/src/pages/Support/Support.tsx`

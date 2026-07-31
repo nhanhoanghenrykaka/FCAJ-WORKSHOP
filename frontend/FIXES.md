@@ -1,0 +1,23 @@
+# Runtime and integration fixes
+
+- Added safe browser-storage helpers so blocked or unavailable `localStorage` / `sessionStorage` no longer crash the application.
+- Validate and normalize saved user data, including compatibility with `ROLE_ADMIN` / `ROLE_USER`, then clear malformed or orphaned sessions safely.
+- Store non-persistent sign-ins in `sessionStorage`; “Remember me” controls persistence.
+- Read JWT from both supported storage locations and clear both after HTTP 401.
+- Normalize authentication responses before they reach React state.
+- Normalize products, Spring Page metadata, categories, cart items, reviews, orders and order items at the API boundary.
+- Support both classic Spring Page fields and the newer nested `page` metadata structure.
+- Convert null arrays and malformed values into safe defaults before components render.
+- Harden product cards and image placeholders against missing names, categories, prices, stock and IDs.
+- Add a top-level React error boundary with reload and session-reset actions; development mode now displays the original error message.
+- Removed the optional React Compiler configuration from Vite and kept the stable official React plugin setup.
+- Reset Product Detail state on route changes, abort stale requests and prevent old product/review data from flashing.
+- Synchronize Catalog controls with URL changes, validate price ranges, abort stale requests and restore loading states.
+- Load Home products and categories independently with proper loading and error states.
+- Load every product page in Admin rather than stopping at 100 products.
+- Keep Admin product/category form state synchronized after category rename/delete.
+- Normalize legacy cart responses and prevent requests containing an undefined cart item ID.
+- Replace registration claims for unavailable wishlist, tracking, invoice and early-drop features.
+- Use the public npm registry and include `.env.example`, `.npmrc` and setup documentation.
+- Fixed the React `destroy is not a function` crash by ensuring `ScrollToTop` does not return the result of `window.scrollTo` from `useEffect`.
+- Rewrote effect cleanup callbacks with explicit blocks so every effect returns only `undefined` or a valid cleanup function.

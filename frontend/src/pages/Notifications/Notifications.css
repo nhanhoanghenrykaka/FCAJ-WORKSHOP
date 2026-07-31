@@ -1,0 +1,49 @@
+.notifications-page { min-height: 70vh; }
+.notifications-shell { max-width: 1080px; }
+.notifications-heading { display: flex; justify-content: space-between; gap: 28px; align-items: end; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+.notifications-heading h1 { margin-top: 8px; }
+.notifications-heading p { margin: 14px 0 0; color: var(--ink-3); max-width: 630px; }
+.notification-summary-card { width: 120px; min-width: 120px; padding: 18px; background: var(--ink); color: white; border-radius: var(--r-lg); display: flex; flex-direction: column; gap: 10px; }
+.notification-summary-card span { font: 600 9px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
+.notification-summary-card strong { font-size: 34px; line-height: 1; font-weight: 500; }
+.notification-toolbar { padding: 20px 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+.notification-filter-group { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg-elevated); }
+.notification-filter-group button { padding: 8px 12px; border-radius: 999px; color: var(--ink-3); font-size: 11px; }
+.notification-filter-group button.is-active { background: var(--ink); color: white; }
+.actor-filter { margin-left: 2px; }
+.mark-all-button { margin-left: auto; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 11px; font-weight: 600; }
+.mark-all-button:hover:not(:disabled) { border-color: var(--ink); }
+.mark-all-button:disabled { opacity: .45; cursor: default; }
+.notification-list { display: flex; flex-direction: column; }
+.notification-item { width: 100%; display: grid; grid-template-columns: 42px minmax(0,1fr) auto; gap: 16px; align-items: start; padding: 20px 12px; border-bottom: 1px solid var(--line); text-align: left; transition: background .18s ease, opacity .18s ease; }
+.notification-item:hover { background: var(--bg-elevated); }
+.notification-item.is-read { opacity: .68; }
+.notification-item.is-unread { background: color-mix(in srgb, var(--bg-elevated) 74%, var(--accent) 4%); }
+.notification-type-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--tag-bg); font: 700 11px/1 var(--font-mono); }
+.type-order, .type-payment { background: var(--info-bg); color: var(--info); }
+.type-review { background: var(--warn-bg); color: var(--warn); }
+.type-product, .type-category { background: var(--success-bg); color: var(--success); }
+.type-cart { background: #e6e1f4; color: #53358d; }
+.notification-content { min-width: 0; }
+.notification-meta { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-bottom: 8px; color: var(--ink-4); font: 500 9px/1.2 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; }
+.notification-meta > span:not(.actor-badge)::before { content: "·"; margin-right: 7px; }
+.actor-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 7px; background: var(--tag-bg); color: var(--tag-ink); }
+.actor-admin { background: var(--info-bg); color: var(--info); }
+.actor-user { background: var(--success-bg); color: var(--success); }
+.actor-system { background: var(--warn-bg); color: var(--warn); }
+.notification-title-row { display: flex; align-items: center; gap: 9px; }
+.notification-title-row strong { font-size: 15px; }
+.unread-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: none; }
+.notification-content p { margin: 5px 0 0; color: var(--ink-3); font-size: 13px; }
+.notification-arrow { padding-top: 9px; color: var(--ink-4); }
+.notification-empty { margin: 36px 0; min-height: 210px; border: 1px dashed var(--line); border-radius: var(--r-lg); display: grid; place-content: center; text-align: center; gap: 6px; color: var(--ink-3); }
+.notification-empty strong { color: var(--ink); }
+@media (max-width: 760px) {
+  .notifications-heading { align-items: start; }
+  .notification-summary-card { width: 90px; min-width: 90px; }
+  .actor-filter { order: 3; width: 100%; overflow-x: auto; border-radius: 12px; }
+  .mark-all-button { margin-left: auto; }
+  .notification-item { grid-template-columns: 34px minmax(0,1fr); padding-left: 0; padding-right: 0; }
+  .notification-type-mark { width: 32px; height: 32px; }
+  .notification-arrow { display: none; }
+}
